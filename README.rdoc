@@ -1,0 +1,30 @@
+== to_urlencoded-rails
+
+This simple plugin gives you the ability to call to_urlencoded to a collection of activerecords for Rails.
+
+
+== Install
+  gem install to_urlencoded-rails
+
+
+== Usage
+
+  @posts = Post.all
+
+  #
+  # default are export header and all fileds
+  #
+
+  @posts.to_urlencoded
+  @posts.to_urlencoded(:only => [:title, :body])
+  @posts.to_urlencoded(:except => [:id])
+
+
+== Contributors
+
+* {Maxim Zhukov}[http://github.com/crmaxx]
+
+
+== Note
+
+Copyright (c) 2013 crmaxx@gmail.com
